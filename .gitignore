@@ -1,0 +1,11 @@
+node_modules/
+public/
+src/
+tailwind.config.js
+postcss.config.js
+package.json
+package-lock.json
+*.zip
+*.log
+!dist/
+!.gitignore
