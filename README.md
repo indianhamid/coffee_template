@@ -11,7 +11,7 @@ https://coffee-template-rho.vercel.app/
 - Easy to customize
 
 ## Tech Stack
-- HTML/CSS/JS (update if you used React/Next/Tailwind)
+- HTML/CSS/JS (update if you used React/Tailwind)
 
 ## Run locally
 Check `package.json` scripts, usually:
