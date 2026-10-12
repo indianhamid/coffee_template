@@ -1,6 +1,6 @@
-# Coffee Template
+# Coffee Landing Template
 
-Responsive coffee shop landing page template.
+A clean, responsive coffee shop landing page template built with **Tailwind CSS (CLI workflow)**.
 
 ## Live Demo
 https://coffee-template-rho.vercel.app/
@@ -14,16 +14,48 @@ https://coffee-template-rho.vercel.app/
   <img src="./screenshots/coffee-mobile-2.png" width="49%" />
 </p>
 
+
 ## Features
 - Responsive layout
-- Clean landing sections (Hero, Features, CTA)
-- Easy to customize
+- Reusable landing sections (Hero / Features / Menu / CTA)
+- Tailwind-based styling
+- Production minify scripts that generate a ready-to-deploy `dist/` folder
 
 ## Tech Stack
-- HTML/CSS/JS (update if you used React/Tailwind)
+- HTML
+- Tailwind CSS (CLI)
+- JavaScript
 
-## Run locally
-Check `package.json` scripts, usually:
-```bash
-npm install
-npm run dev
+## Project Structure (high-level)
+- `src/input.css` → Tailwind input file
+- `public/` → development files (HTML/CSS/JS)
+- `public/styles/app.css` → generated Tailwind output (dev)
+- `dist/` → minified production build (generated)
+
+## Run Locally (Development)
+
+1) Install dependencies:
+
+    npm install
+
+2) Start Tailwind watcher (generates CSS into `public/styles/app.css`):
+
+    npm run dev
+
+3) Open in browser:
+
+- `public/index.html`
+
+## Production Build (Minified)
+
+Generate a minified build in the `dist/` folder:
+
+    npm run minify:all
+
+Output files:
+- `dist/index.html`
+- `dist/styles/app.min.css`
+- `dist/js/app.min.js`
+
+## License
+MIT
